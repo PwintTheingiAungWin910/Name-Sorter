@@ -10,7 +10,6 @@ namespace SortNames
     {
         static void Main(string[] args)
         {
-		
 			string fileName = "C:\\Users\\PwintTheingiAW\\source\\repos\\SortNames\\SortNames\\unsorted-names-list.txt";
 			string[] incomingNames = System.IO.File.ReadAllLines(fileName);
 			var sortedNames = getSortedNames(incomingNames);
@@ -32,6 +31,7 @@ namespace SortNames
 			return names;
 		}
 
+		// Move Last name to first place
 		private static string getFormattedName(string name)
 		{
 			var names = name.Split(' ');
